@@ -40,8 +40,6 @@ angular.module("listaTelefonica").controller("listaTelefonicaCtrl", function ($s
 		});
 	};
 	$scope.ordenarPor = function (campo) {
-		console.log(campo);
-		console.log($scope.direcaoDaOrdenacao);
 		$scope.criterioDeOrdenacao = campo;
 		$scope.direcaoDaOrdenacao = !$scope.direcaoDaOrdenacao;
 	};
