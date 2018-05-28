@@ -37,7 +37,7 @@ public class SwaggerConfig {
                 "API REST de cadastro de Contatos",
                 "1.0",
                 "Terms of Service",
-                new Contact("Daniel Ventura", "endereço github",
+                new Contact("Daniel Ventura", "https://github.com/danielventura77/pocapplication1",
                         "dsventura@gmail.com"),
                 "Apache License Version 2.0",
                 "https://www.apache.org/licesen.html", new ArrayList<VendorExtension>()
