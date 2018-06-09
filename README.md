@@ -56,7 +56,7 @@ Prova de Conceito (POC) utilizando: AngularJs com Bootstrap no frontend e RESTfu
 
 <ul>
   <li>Foi utilizado o JPA para consulta e persistências no banco de dados, assim como os mapeamentos <strong>@ManyToOne</strong> e <strong>@OneToMany</strong> entre as entidades Contato e Operadora do modelo.</li><br/>
-  <li>Foi utilizado o <strong>Swagger-UI<strong> para geração de interface web para API, facilitando assim a sua documentação e a interação com os seus recursos.</li><br/>
+  <li>Foi utilizado o <strong>Swagger-UI</strong> para geração de interface web para API, facilitando assim a sua documentação e a interação com os seus recursos.</li><br/>
 </ul>
 
 # Documentação API RESTfull<br/>
