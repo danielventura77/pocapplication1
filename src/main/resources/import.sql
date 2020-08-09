@@ -12,7 +12,7 @@ INSERT INTO public.contato (data, nome, telefone, fk_cod_operadora) VALUES ('197
 INSERT INTO public.contato (data, nome, telefone, fk_cod_operadora) VALUES ('1979-08-12 00:00:00.000000', 'Mariana Fonseca', '1452-9541', 5);
 INSERT INTO public.contato (data, nome, telefone, fk_cod_operadora) VALUES ('2010-12-11 00:00:00.000000', 'Maria Fontana', '7896-3685', 6);
 INSERT INTO public.contato (data, nome, telefone, fk_cod_operadora) VALUES ('2011-11-18 00:00:00.000000', 'Guilherme Silva', '8521-9563', 1);
-INSERT INTO public.contato (data, nome, telefone, fk_cod_operadora) VALUES ('2014-01-15 00:00:00.000000', 'Paulo José', '3652-7825', 2);
+INSERT INTO public.contato (data, nome, telefone, fk_cod_operadora) VALUES ('2014-01-15 00:00:00.000000', 'Paulo Marinho', '3652-7825', 2);
 INSERT INTO public.contato (data, nome, telefone, fk_cod_operadora) VALUES ('2016-03-16 00:00:00.000000', 'Leonardo Souza', '1469-3621', 4);
 
 
