@@ -1,5 +1,6 @@
 # pocapplication1
 Prova de Conceito (POC) utilizando: AngularJs com Bootstrap no frontend e RESTfull API com SpringBoot no backend.
+OBS: O frontend em AngularJs está embeded no springboot na pasta main/resources/static sendo startado com o embed tomcat do SpringBoot.
 
 # Interface
 <a href="https://pocapplication1.herokuapp.com/" target="_blank">![Alt text](app.png?raw=true "Ir para Aplicação")</a>
@@ -70,4 +71,38 @@ Prova de Conceito (POC) utilizando: AngularJs com Bootstrap no frontend e RESTfu
         <li><a href="https://pocapplication1.herokuapp.com/operadora" target="_blank">https://pocapplication1.herokuapp.com/operadora</a></li>
       </ul>
        
-      
+
+# Get started<br/>
+
+
+1) Configurar o parâmetro spring.profiles.active no arquivo de propriedades (src\main\resources\application.properties)
+
+        spring.profiles.active=dev      Executa o projeto apontando para um banco de dados MySql local
+        spring.profiles.active=prod     Executa o projeto apontando para um banco de dados PostgreSQL na Amazon RDS
+        
+2) Criar um schema com o nome "poc" caso utilize MySql.
+
+        CREATE SCHEMA poc;
+        
+3) Criar um database com o nome "poc" caso utilize PostgreSQL.
+
+        CREATE DATABASE poc;
+
+4) Inicializar o projeto: 
+
+    4.1) Com o maven:
+    
+        mvn spring-boot:run
+        
+    4.2) Diretamente pelo Jar da aplicação escolhendo o ambiente (dev ou prod):
+        
+        java -jar -Dspring.profiles.active=prod poc-0.0.1-SNAPSHOT.jar
+        
+        
+        
+
+        
+    
+        
+        
+        
