@@ -34,7 +34,7 @@ OBS: O frontend em AngularJs está embeded no springboot na pasta main/resources
     <li>JPA</li>
     <li>MySQL (para ambiente de desenvolvimento)</li>
     <li>PostgreSQL (para ambiente de produção)</li>
-    <li>Building e deploy da app no Heroku:  https://devcenter.heroku.com/</li>
+    <li>Building e deploy da app na Amazon AWS:  http://ec2-18-231-160-253.sa-east-1.compute.amazonaws.com:8080</li>
    </ul>
 </ul>
 <br/>
