@@ -3,7 +3,7 @@ Prova de Conceito (POC) utilizando: AngularJs com Bootstrap no frontend e RESTfu
 OBS: O frontend em AngularJs está embeded no springboot na pasta main/resources/static sendo startado com o embed tomcat do SpringBoot.
 
 # Interface
-<a href="https://pocapplication1.herokuapp.com/" target="_blank">![Alt text](app.png?raw=true "Ir para Aplicação")</a>
+<a href="http://ec2-18-231-160-253.sa-east-1.compute.amazonaws.com:8080/" target="_blank">![Alt text](app.png?raw=true "Ir para Aplicação")</a>
 
 # AngularJs<br/>
 
@@ -62,13 +62,13 @@ OBS: O frontend em AngularJs está embeded no springboot na pasta main/resources
 
 # Documentação API RESTfull<br/>
   
-  <a href="https://pocapplication1.herokuapp.com/swagger-ui.html" target="_blank">https://pocapplication1.herokuapp.com/swagger-ui.html</a>
+  <a href="http://ec2-18-231-160-253.sa-east-1.compute.amazonaws.com:8080/swagger-ui.html" target="_blank">http://ec2-18-231-160-253.sa-east-1.compute.amazonaws.com:8080/swagger-ui.html</a>
    
   <br/>
   <strong>EndPoints:</strong><br/>
       <ul>
-        <li><a href="https://pocapplication1.herokuapp.com/contato" target="_blank">https://pocapplication1.herokuapp.com/contato</a></li>
-        <li><a href="https://pocapplication1.herokuapp.com/operadora" target="_blank">https://pocapplication1.herokuapp.com/operadora</a></li>
+        <li><a href="http://ec2-18-231-160-253.sa-east-1.compute.amazonaws.com:8080/contato" target="_blank">http://ec2-18-231-160-253.sa-east-1.compute.amazonaws.com:8080/contato</a></li>
+        <li><a href="http://ec2-18-231-160-253.sa-east-1.compute.amazonaws.com:8080/operadora" target="_blank">http://ec2-18-231-160-253.sa-east-1.compute.amazonaws.com:8080/operadora</a></li>
       </ul>
        
 
@@ -87,8 +87,16 @@ OBS: O frontend em AngularJs está embeded no springboot na pasta main/resources
 3) Criar um database com o nome "poc" caso utilize PostgreSQL.
 
         CREATE DATABASE poc;
+        
+4) Configurar no angularJs a url da api rest
 
-4) Inicializar o projeto: 
+    No arquivo: src/main/resources/static/js/value/configValue.js
+            
+            angular.module("listaTelefonica").value("config", {
+            	baseUrl: "http://ec2-18-231-160-253.sa-east-1.compute.amazonaws.com:8080/"
+            });
+
+5) Inicializar o projeto: 
 
     4.1) Com o maven:
     
