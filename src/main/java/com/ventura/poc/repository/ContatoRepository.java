@@ -7,5 +7,6 @@ import com.ventura.poc.models.Contato;
 public interface ContatoRepository extends JpaRepository<Contato,String>{
 	
 	Contato findByCodigo(Long codigo);
+	void deleteContatoByCodigo(Long codigo);
 
 }

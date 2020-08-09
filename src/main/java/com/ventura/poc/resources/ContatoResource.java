@@ -6,6 +6,7 @@ import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.transaction.Transactional;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -54,7 +55,9 @@ public class ContatoResource {
 	@GetMapping(value="/{codigo}", produces="application/json")
 	public @ResponseBody Contato contato(@PathVariable(value="codigo") Long codigo){
 		Contato contato = cr.findByCodigo(codigo);
-		contato.add(linkTo(methodOn(ContatoResource.class).listaContatos()).withRel("Lista de Contatos"));
+		if(contato!=null) {
+			contato.add(linkTo(methodOn(ContatoResource.class).listaContatos()).withRel("Lista de Contatos"));
+		}
 		return contato;
 	}
 	
@@ -67,8 +70,9 @@ public class ContatoResource {
 	
 	@ApiOperation(value="Deleta um Contato")
 	@DeleteMapping()
+	@Transactional
 	public Contato deletaContato(@RequestBody Contato contato){
-		cr.delete(contato);
+		cr.deleteContatoByCodigo(contato.getCodigo());
 		return contato;
 	}
 	
